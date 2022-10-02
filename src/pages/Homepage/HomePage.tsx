@@ -1,10 +1,12 @@
 import React from 'react'
-import Layout from '../../components/shared/layout/Layout'
+import Home from '../../components/features/home/Home'
+import Layout from '../../components/shared/Layout/Layout'
+
 
 const HomePage = () => {
   return (
     <Layout>
-        <div></div>
+        <Home/>
     </Layout>
   )
 }

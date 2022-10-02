@@ -1,10 +1,12 @@
-import React from 'react'
-import Layout from '../../components/shared/layout/Layout'
+import Customer from '../../components/features/customers/Customer'
+import Layout from '../../components/shared/Layout/Layout'
+
 
 const CustomerPage = () => {
+  
   return (
     <Layout>
-        <div></div>
+        <Customer />
     </Layout>
   )
 }

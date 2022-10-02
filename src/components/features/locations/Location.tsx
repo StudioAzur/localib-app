@@ -2,7 +2,9 @@ import React from 'react'
 
 const Location = () => {
   return (
-    <div>Location</div>
+    <div>
+      <h2>Liste des locations</h2>
+    </div>
   )
 }
 

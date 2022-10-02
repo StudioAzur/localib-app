@@ -2,29 +2,34 @@ import React from "react";
 import { GiCarKey, GiCarWheel, GiHomeGarage, GiStrong } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import NavbarItem from "./NavbarItem";
+import "./navbar.css";
 
 const NavbarList = () => {
   const navLinkDetails = [
     {
       path: "/",
-      icon: <GiHomeGarage/>,
+      icon: <GiHomeGarage />,
+      text: "Accueil",
     },
     {
       path: "/customers",
-      icon: <GiStrong/>,
+      icon: <GiStrong />,
+      text: "Utilisateurs",
     },
     {
       path: "/vehicles",
-      icon: <GiCarWheel/>,
+      icon: <GiCarWheel />,
+      text: "Véhicules",
     },
     {
       path: "/locations",
-      icon: <GiCarKey/>,
+      icon: <GiCarKey />,
+      text: "Locations",
     },
   ];
   return (
     <nav className="main_nav">
-      <ul>
+      <ul className="item-nav">
         {navLinkDetails.map((navlink, i) => {
           return (
             <li key={i}>
@@ -32,7 +37,10 @@ const NavbarList = () => {
                 to={navlink.path}
                 className={({ isActive }) => (isActive ? "active-link" : "")}
               >
-                <NavbarItem icon={navlink.icon} key={navlink.path} />
+                <div className="test">
+                  <NavbarItem icon={navlink.icon} key={navlink.path} />
+                  {navlink.text}
+                </div>
               </NavLink>
             </li>
           );

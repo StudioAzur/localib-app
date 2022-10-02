@@ -1,10 +1,12 @@
 import React from 'react'
-import Layout from '../../components/shared/layout/Layout'
+import Vehicles from '../../components/features/vehicles/Vehicles'
+import Layout from '../../components/shared/Layout/Layout'
+
 
 const VehiclePage = () => {
   return (
     <Layout>
-        <div></div>
+        <Vehicles/>
     </Layout>
   )
 }

@@ -1,0 +1,19 @@
+.list_customer{
+    background-color: blue;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 180px 180px 180px 360px 180px 180px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    text-align: center;
+  }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    font-size: 150%;
+  }

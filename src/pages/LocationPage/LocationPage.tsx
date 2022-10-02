@@ -1,10 +1,12 @@
 import React from 'react'
-import Layout from '../../components/shared/layout/Layout'
+import Location from '../../components/features/locations/Location'
+import Layout from '../../components/shared/Layout/Layout'
+
 
 const LocationPage = () => {
   return (
     <Layout>
-        <div></div>
+        <Location/>
     </Layout>
   )
 }
