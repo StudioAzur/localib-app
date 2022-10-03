@@ -1,5 +1,6 @@
 import React from 'react'
 import NavbarList from '../Navbar/NavbarList';
+import './layout.css'
 
 interface LayoutProps {
 	children: JSX.Element;

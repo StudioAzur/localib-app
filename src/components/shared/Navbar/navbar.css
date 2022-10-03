@@ -1,23 +1,27 @@
-.test{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-decoration: none;
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
 }
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
 .item-nav {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    column-gap: 6em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  column-gap: 6em;
+  background-color: grey;
 }
 
 .item-nav a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.main_nav {
+  margin: 0;
 }

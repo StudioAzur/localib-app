@@ -4,6 +4,7 @@ import CustomerInterface from "../../../types/customer.type";
 import HeadTable from "./HeadTable";
 import Logo from "../../shared/Logo/Logo";
 import { GiEyeball, TiUserDelete } from "../../../icons";
+import { useNavigate } from "react-router-dom";
 
 const Customer = () => {
   const [customers, setCustomers] = useState<[] | CustomerInterface[]>([]);
@@ -15,9 +16,16 @@ const Customer = () => {
     fetchCustomers();
   }, []);
 
-  const format = (date: string | Date) => {
-    date = new Date().toLocaleDateString();
-    return date;
+  const format = (date: Date, separator: string) => {
+    const day = date.getDay();
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    return `${day}${separator}${month}${separator}${year}`;
+  };
+
+  let navigate = useNavigate();
+  const routeChange = () => {
+    navigate("/addCustomer");
   };
 
   return (
@@ -29,7 +37,7 @@ const Customer = () => {
           <>
             <div className="box">{customer.name}</div>
             <div className="box">{customer.surname}</div>
-            <div className="box">{format(customer.birthday)}</div>
+            <div className="box">{format(new Date(customer.birthday), "/")}</div>
             <div className="box">{customer.email}</div>
             <div className="box">{customer.phoneNumber}</div>
             <div className="box">
@@ -40,6 +48,9 @@ const Customer = () => {
             </div>
           </>
         ))}
+        <button className="button_add_customer" onClick={routeChange}>
+          Ajouter un utilisateur
+        </button>
       </div>
     </div>
   );

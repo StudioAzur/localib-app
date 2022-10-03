@@ -14,7 +14,7 @@ const NavbarList = () => {
     {
       path: "/customers",
       icon: <GiStrong />,
-      text: "Utilisateurs",
+      text: "Clients",
     },
     {
       path: "/vehicles",

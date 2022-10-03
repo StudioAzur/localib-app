@@ -1,27 +1,35 @@
-.list_customer {
-  background-color: #207cca;
-  color: #fff;
+#customer_add_form input[type="text"] {
+  display: block;
+  height: 32px;
+  padding: 6px 16px;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+#customer_add_form {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  padding: 20px 50px 40px;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  font-family: sans-serif;
+}
+
+#customer_add_form * {
+  box-sizing: border-box;
+}
+
+#customer_add_form h2 {
   text-align: center;
-
+  margin-bottom: 30px;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 180px 180px 180px 360px 180px 180px 100px;
-  grid-gap: 10px;
-  background-color: #fff;
-  color: #444;
-  text-align: center;
+#customer_add_form input {
+  margin-bottom: 15px;
 }
 
-.box {
-  background-color: #207cca;
-  color: #fff;
-  padding: 20px;
-  font-size: 150%;
-}
-
-.button_add_customer {
+#customer_add_form button[type="submit"] {
   display: block;
   margin: 20px auto 0;
   width: 150px;
@@ -31,23 +39,22 @@
   color: #eee;
   font-weight: 700;
   box-shadow: 1px 4px 10px 1px #aaa;
-  cursor: pointer;
 
   background: #207cca; /* Old browsers */
   background: -moz-linear-gradient(
     left,
     #207cca 0%,
-    #5864a3 100%
+    #9f58a3 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     left,
     #207cca 0%,
-    #5162b7  100%
+    #9f58a3 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to right,
     #207cca 0%,
-    #5162b7  100%
+    #9f58a3 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#9f58a3',GradientType=1 ); /* IE6-9 */
 }
